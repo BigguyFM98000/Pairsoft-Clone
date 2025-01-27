@@ -1,0 +1,172 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-white {
+    width: 100px;
+    height: auto;
+    margin-left: 80px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: large;
+}
+
+.nav-list li:hover {
+    color: #426C40;
+}
+
+.nav-ending {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.demo {
+    border: 2px solid #426C40;
+    text-decoration: none;
+    height: 52px;
+    padding: 13px 26px;
+    border-radius: 26px;
+    text-align: center;
+    background: #5FB260;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.home-right{
+    width: 20px;
+    height: auto;
+}
+
+.home-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.home-heading{
+    font-size: 50px;
+    margin-bottom: 0;
+    
+}
+
+.home-paragraph {
+    font-size: 22px;
+    width: 80%;
+    margin-top: 10px;
+    
+}
+
+.watch-video{
+    border: 2px solid black;
+    text-decoration: none;
+    height: 52px;
+    padding: 13px 26px;
+    border-radius: 26px;
+    text-align: center;
+    color: black;
+}
+
+/* For screens 768px and below (Tablets and smaller devices) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack the logo and nav items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .logo-white {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Add some space below the logo */
+    }
+
+    .home{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 15px; /* Reduce the gap between items */
+        font-size: medium; /* Adjust font size for smaller screens */
+    }
+
+    .nav-ending {
+        flex-direction: column; /* Stack nav-ending items vertically */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-left{
+        width: 100%;
+    }
+
+    .home-right img{
+        width: 200px;
+        height: auto;
+    }
+
+    .home-heading{
+        font-size: 25px;
+        width: 90vw;
+    }
+
+    .home-paragraph {
+        font-size: 16px;
+    }
+
+    .demo {
+        width: 100%; /* Make the demo button full width */
+        padding: 12px; /* Adjust padding for a smaller screen */
+        border-radius: 8px; /* Optional: smaller radius for better proportions */
+    }
+}
+
+/* For screens 480px and below (Small phones) */
+@media (max-width: 480px) {
+    .nav-list {
+        font-size: small; /* Further reduce font size on smaller screens */
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-left{
+        width: 100%;
+    }
+
+    .home-right img{
+        width: 200px;
+        height: auto;
+    }
+
+    .demo {
+        font-size: small; /* Adjust the font size in the demo button */
+        padding: 10px; /* Smaller padding for smaller screens */
+    }
+}
