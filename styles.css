@@ -87,6 +87,51 @@ nav {
     color: black;
 }
 
+/* Second Section */
+.integrations-heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+.second-section {
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 1px gray;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.container:hover{
+    border: 2px solid gray;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 25px;
+}
+
+.container img{
+    width: 120px;
+}
+
+.caption h6{
+    font-size: 25px;
+    text-align: center;
+}
+
+.caption a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
 /* For screens 768px and below (Tablets and smaller devices) */
 @media (max-width: 768px) {
     nav {
@@ -139,6 +184,10 @@ nav {
         font-size: 16px;
     }
 
+    .icon-container{
+        flex-direction: column;
+    }
+
     .demo {
         width: 100%; /* Make the demo button full width */
         padding: 12px; /* Adjust padding for a smaller screen */
@@ -163,6 +212,10 @@ nav {
     .home-right img{
         width: 200px;
         height: auto;
+    }
+    
+    .icon-container{
+        flex-direction: column;
     }
 
     .demo {
