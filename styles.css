@@ -43,6 +43,7 @@ nav {
     border-radius: 26px;
     text-align: center;
     background: #5FB260;
+    cursor: pointer;
 }
 
 .home {
@@ -347,7 +348,7 @@ nav {
   }
   
   .heading:hover {
-    background-color: #d1d1d1;
+    background-color: #fff;
   }
 
   .heading img{
@@ -434,6 +435,82 @@ nav {
     width: 20%;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  /* nineth section */
+  .nineth-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #091100;
+    margin: 0 auto;
+  }
+
+  .nineth-section-heading{
+    width: 40%;
+    padding-left: 50px;
+  }
+
+  .nineth-section-heading h2{
+    color: #fff;
+    font-size: 45px;
+  }
+
+  .nineth-section-heading P{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .demo-link{
+    color: #fff;
+  }
+
+  .nineth-section-content{
+    width: 60%;
+  }
+
+  .nineth-section-content img{
+    width: 800px;
+  }
+
+  /* Tenth section */
+  .tenth-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tenth-section-image img{
+    width: 150px;
+    height: 50px;
+  }
+
+  .partner-btn{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .demo-btn{
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .tenth-section-content{
+    padding-top: 20px;
+  }
+
+  hr{
+    width: 90%;
   }
 
 /* For screens 768px and below (Tablets and smaller devices) */
@@ -555,6 +632,34 @@ nav {
         margin: 0 auto;
       }
 
+      .nineth-section{
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .nineth-section-content img{
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+      }
+
+      .nineth-section-heading{
+        width: 100%;
+      }
+
+      .nineth-section-heading h2{
+        font-size: 25px;
+      }
+
+      .tenth-section{
+        flex-direction: column;
+      }
+
+      .tenth-section-content{
+        flex-direction: column;
+        gap: 20px;
+      }
+
     .demo {
         width: 100%;
         /* Make the demo button full width */
@@ -632,6 +737,34 @@ nav {
 
       .eighth-section-content img{
         width: 40%;
+      }
+
+      .nineth-section{
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .nineth-section-content img{
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+      }
+
+      .nineth-section-heading{
+        width: 100%;
+      }
+
+      .nineth-section-heading h2{
+        font-size: 25px;
+      }
+
+      .tenth-section{
+        flex-direction: column;
+      }
+
+      .tenth-section-content{
+        flex-direction: column;
+        gap: 20px;
       }
 
     .demo {
