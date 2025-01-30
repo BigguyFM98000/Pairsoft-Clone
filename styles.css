@@ -49,7 +49,6 @@ nav {
 .home {
     display: flex;
     flex-direction: row;
-
 }
 
 .home-right {
@@ -513,6 +512,77 @@ nav {
     width: 90%;
   }
 
+  /* Eleventh section */
+  .eleventh-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product ul li{
+    list-style: none;
+  }
+
+  .product ul li a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  .product ul li a:hover{
+    color: #5FB260;
+  }
+
+  .industries ul li, .pricing ul li{
+    list-style: none;
+  }
+
+  .industries ul li a, .pricing ul li a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  .industries ul li a:hover{
+    color: #5FB260;
+  }
+
+  .pricing ul li a:hover{
+    color: #5FB260;
+  }
+
+  .icons i{
+    margin-left: 20px;
+    color: #5FB260;
+  }
+
+  /* Footer */
+  footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: #f3f5f5;
+    padding: 20px;
+  }
+
+  .copyright span{
+    font-size: 13px;
+  }
+
+  .footer-links span a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+
+  .footer-links span a:hover{
+    color: #5FB260;
+  }
+
 /* For screens 768px and below (Tablets and smaller devices) */
 @media (max-width: 768px) {
     nav {
@@ -660,6 +730,15 @@ nav {
         gap: 20px;
       }
 
+      .eleventh-section{
+        flex-direction: column;
+      }
+
+      footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
     .demo {
         width: 100%;
         /* Make the demo button full width */
@@ -765,6 +844,15 @@ nav {
       .tenth-section-content{
         flex-direction: column;
         gap: 20px;
+      }
+
+      .eleventh-section{
+        flex-direction: column;
+      }
+
+      footer{
+        flex-direction: column;
+        flex-wrap: wrap;
       }
 
     .demo {
