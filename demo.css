@@ -1,0 +1,103 @@
+body{
+    background-color: #f3f5ea;
+}
+
+.sixth-section p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sixth-section h2{
+    font-size: 50px;
+}
+
+.second-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-section div{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+}
+
+.logo-section div a img{
+    height: 40px;
+}
+
+.free-pairsoft {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.free-pairsoft h2{
+    font-size: 50px;
+}
+
+.free-pairsoft p{
+    font-size: 20px;
+}
+
+.free-pairsoft h3{
+    font-size: 30px;
+}
+
+.free-pairsoft ul li{
+    list-style:disc;
+    font-size: 20px;
+}
+
+.form-info-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+.form-cover {
+    width: 50%;
+}
+
+.form-container{
+    border: 2px solid grey;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#firstname{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+#lastname {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#phonenumber, #workemail{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 94%;
+}
+
+fieldset{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#erp, #interests{
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
