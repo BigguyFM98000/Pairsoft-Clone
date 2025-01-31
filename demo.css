@@ -58,6 +58,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }  
 
 .form-cover {
@@ -100,4 +101,160 @@ fieldset{
     width: 100%;
     padding: 5px;
     border: none;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .sixth-section p {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .sixth-section h2 {
+        font-size: 35px;
+    }
+
+    .second-section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo-section div {
+        width: 80%;
+        height: 80px;
+    }
+
+    .free-pairsoft {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .free-pairsoft h2 {
+        font-size: 40px;
+    }
+
+    .free-pairsoft p {
+        font-size: 18px;
+    }
+
+    .free-pairsoft h3 {
+        font-size: 25px;
+    }
+
+    .free-pairsoft ul li {
+        font-size: 18px;
+    }
+
+    .form-info-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-cover {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    #firstname, #lastname, #phonenumber, #workemail {
+        font-size: 18px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    #firstname {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        margin-bottom: 15px;
+    }
+
+    #erp, #interests {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .sixth-section p {
+        font-size: 22px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .sixth-section h2 {
+        font-size: 45px;
+    }
+
+    .second-section {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .logo-section div {
+        width: 60%;
+    }
+
+    .free-pairsoft {
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    .free-pairsoft h2 {
+        font-size: 45px;
+    }
+
+    .free-pairsoft p {
+        font-size: 18px;
+    }
+
+    .free-pairsoft h3 {
+        font-size: 28px;
+    }
+
+    .free-pairsoft ul li {
+        font-size: 18px;
+    }
+
+    .form-info-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-cover {
+        width: 50%;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    #firstname, #lastname, #phonenumber, #workemail {
+        font-size: 19px;
+        padding: 9px;
+        width: 48%;
+    }
+
+    #firstname {
+        margin-right: 10px;
+    }
+
+    fieldset {
+        margin-bottom: 18px;
+    }
+
+    #erp, #interests {
+        width: 100%;
+        padding: 6px;
+    }
 }

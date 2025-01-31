@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.css">
 </head>
+
 <body>
     <nav>
         <div class="hamburger">
-            <img src="images/logo-white.webp" alt="Pairsoft Logo" class="logo-white"/>
+            <img src="images/logo-white.webp" alt="Pairsoft Logo" class="logo-white" />
         </div>
-        
+
         <div class="nav-middle">
             <ul class="nav-list">
                 <li>Product</li>
@@ -35,14 +37,24 @@
     <section class="home">
         <div class="home-left">
             <h1 class="home-heading">Free your team from manual processes.</h1>
-            <p class="home-paragraph">Reduce costs and elevate your team above routine, transactional work with PairSoft’s AP automation, procurement, and document management solutions.</p>
+            <p class="home-paragraph">Reduce costs and elevate your team above routine, transactional work with
+                PairSoft’s AP automation, procurement, and document management solutions.</p>
             <p>
                 <a href="demo.html" class="demo">Get a Demo</a>
-                <a href="#" class="watch-video">Watch Video</a>
+                <a href="#" class="watch-video" id="watch-video-btn">Watch Video</a>
             </p>
+            <!-- Modal (Hidden by default) -->
+            <div id="video-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-btn" class="close-btn">&times;</span>
+                    <iframe id="video-iframe" width="560" height="315" src="" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
         <div class="home-right">
-            <img src="images/home-2-pfa-0823.webp" alt="Photo of people" width="800px"/>
+            <img src="images/home-2-pfa-0823.webp" alt="Photo of people" width="800px" />
         </div>
     </section>
     <section class="second-section">
@@ -95,73 +107,77 @@
     <section class="third-section">
         <div class="section-three-heading">
             <h2>Become the efficient, strategic organzation
-            <br/>you can be proud of.</h2>
+                <br />you can be proud of.
+            </h2>
         </div>
         <div class="section-three-content">
             <article class="first">
                 <h2>+90%</h2>
-                <p>more efficient document<br/>filling and retrieval</p>
+                <p>more efficient document<br />filling and retrieval</p>
                 <div class="link-container">
                     <a href="#">Read the case study &gt;</a>
                 </div>
-                
+
             </article>
             <article class="first">
                 <h2>+70%</h2>
-                <p>faster<br/>approvals</p>
+                <p>faster<br />approvals</p>
                 <div class="link-container">
                     <a href="#">Read the case study &gt;</a>
                 </div>
-                
+
             </article>
             <article class="first">
                 <h2>$62,000</h2>
-                <p>annual savings in<br/>employee time</p>
+                <p>annual savings in<br />employee time</p>
                 <div class="link-container">
                     <a href="#">Read the case study &gt;</a>
                 </div>
-                
+
             </article>
         </div>
     </section>
-    <hr/>
+    <hr />
     <section class="forth-section">
         <div class="forth-heading">
             <h2>Let your software do the heavy lifting.</h2>
             <p>
-                PairSoft tackles the grunt work and accelerates your <br/>workflows so you can focus on your mission. 
+                PairSoft tackles the grunt work and accelerates your <br />workflows so you can focus on your mission.
             </p>
         </div>
         <div class="container-divs">
             <article class="article-container">
                 <img src="images/icon-balance.svg" alt="Balance icon">
                 <h2>Experience one scalable source of truth</h2>
-                <p>Gain full control and visibility of your<br/>data with embedded solutions within<br/>your ERP.</p>
+                <p>Gain full control and visibility of your<br />data with embedded solutions within<br />your ERP.</p>
             </article>
             <article class="article-container">
                 <img src="images/icon-diagram-large.svg" alt="Diagram  icon">
                 <h2>Streamline team workflows</h2>
-                <p>Boost collaboration across<br/>departments, devices, and remote<br/>work through better routing and<br/>approval pathways.</p>
+                <p>Boost collaboration across<br />departments, devices, and remote<br />work through better routing
+                    and<br />approval pathways.</p>
             </article>
             <article class="article-container">
                 <img src="images/icon-calendar_alert.svg" alt="Calender icon">
                 <h2>Eliminate human error</h2>
-                <p>Save time on tedious manual processes<br/>with intuitive data capture and<br/>intelligent data retrieval.</p>
+                <p>Save time on tedious manual processes<br />with intuitive data capture and<br />intelligent data
+                    retrieval.</p>
             </article>
             <article class="article-container">
                 <img src="images/icon-smile.svg" alt="Smile icon">
                 <h2>Discover stress-free audits</h2>
-                <p>Never dread another audit. Ensure<br/>purchasing compliance and report<br/>financials with a few clicks.</p>
+                <p>Never dread another audit. Ensure<br />purchasing compliance and report<br />financials with a few
+                    clicks.</p>
             </article>
             <article class="article-container">
                 <img src="images/icon-time_management.svg" alt="Time management icon">
                 <h2>Manage vendor relationships</h2>
-                <p>Plan purchasing needs ahead of time<br/>to save money and improve decision-<br/>making.</p>
+                <p>Plan purchasing needs ahead of time<br />to save money and improve decision-<br />making.</p>
             </article>
             <article class="article-container">
                 <img src="images/icon-puzzle.svg" alt="Puzzle icon">
                 <h2>Make work more meaningful</h2>
-                <p>Reduce manual data entry and<br/>empower employees to focus on<br/>higher-value tasks.</p>
+                <p>Reduce manual data entry and<br />empower employees to focus on<br />higher-value tasks.</p>
             </article>
         </div>
     </section>
@@ -173,46 +189,48 @@
                     <img src="images/icon-diagram-large.svg" alt="Large Diagram Icon">
                 </div>
                 <h3>AP Automation</h3>
-                <p>Intuitive AI technology for complete<br/>invoicing, PO, and workflow optimization.</p>
+                <p>Intuitive AI technology for complete<br />invoicing, PO, and workflow optimization.</p>
                 <div class="link-container">
                     <a href="#">Discover AP Automation &gt;</a>
                 </div>
-                
+
             </article>
             <article class="fifth-section-container">
                 <div class="image-container">
                     <img src="images/icon-document_with_checkmark-large.svg" alt="Document with checkmark icon">
                 </div>
                 <h3>Document Management</h3>
-                <p>Gold standard document filing and data<br/>extraction for easy audits and approvals.</p>
+                <p>Gold standard document filing and data<br />extraction for easy audits and approvals.</p>
                 <div class="link-container">
                     <a href="#">Discover Document Management &gt;</a>
                 </div>
-                
+
             </article>
             <article class="fifth-section-container">
                 <div class="image-container">
                     <img src="images/icon-receipt-large.svg" alt="Receipt Icon">
                 </div>
                 <h3>Procurement</h3>
-                <p>Bolster vendor relationships with<br/>streamlined communication tools.</p>
+                <p>Bolster vendor relationships with<br />streamlined communication tools.</p>
                 <div class="link-container">
                     <a href="#">Learn About Procurement &gt;</a>
                 </div>
-                
+
             </article>
         </div>
     </section>
     <div class="outer-div">
         <section class="sixth-section">
-            <h2>A leading software for mid-size and<br/>enterprise businesses.</h2>
+            <h2>A leading software for mid-size and<br />enterprise businesses.</h2>
             <article class="sticker-container">
                 <div class="layout-div">
-                    <img src="images/DocumentScanning_HighPerformer_HighPerformer-300x390 (1).webp" alt="High performer sticker">
+                    <img src="images/DocumentScanning_HighPerformer_HighPerformer-300x390 (1).webp"
+                        alt="High performer sticker">
                     <img src="images/DocumentScanning_MomentumLeader_Leader-300x390.webp" alt="Momentum leader sticker">
                 </div>
                 <div class="layout-div">
-                    <img src="images/APAutomation_HighestUserAdoption_Mid-Market_Adoption-300x390.webp" alt="Higher user sticker">
+                    <img src="images/APAutomation_HighestUserAdoption_Mid-Market_Adoption-300x390.webp"
+                        alt="Higher user sticker">
                     <img src="images/users-love-us-300x390.webp" alt="Users love us sticker">
                 </div>
             </article>
@@ -221,31 +239,37 @@
     <section class="seventh-section">
         <div class="seventh-section-heading">
             <h2>See what PairSoft can do for you.</h2>
-            <p>PairSoft helps accounts payable, procurement, and fundraising teams eliminate inefficiencies and work smarter.<br/>Explore the day-to-day tasks PairSoft can accomplish for you by clicking through the buttons below.</p>
+            <p>PairSoft helps accounts payable, procurement, and fundraising teams eliminate inefficiencies and work
+                smarter.<br />Explore the day-to-day tasks PairSoft can accomplish for you by clicking through the
+                buttons below.</p>
         </div>
         <div class="containers">
             <!-- First Div with Headings -->
             <div class="headings">
-              <h3 class="heading" onclick="showInfo(1)"><img src="images/icon-calendar_clock.svg" alt="Calendar clock"> Simplify Steps to Month-End Close &gt;</h3>
-              <h3 class="heading" onclick="showInfo(2)"><img src="images/icon-timeline.svg" alt="Timeline icon"> Eliminate Approval Bottlenecks &gt;</h3>
-              <h3 class="heading" onclick="showInfo(3)"><img src="images/icon-document_with_checkmark_and_dollar.svg" alt="Checkmark and dollar icon"> Reduce AP Processing Costs &gt;</h3>
-              <h3 class="heading" onclick="showInfo(4)"><img src="images/icon-wallet.svg" alt="Wallet icon"> Increase Spend Management Control &gt;</h3>
+                <h3 class="heading" onclick="showInfo(1)"><img src="images/icon-calendar_clock.svg"
+                        alt="Calendar clock"> Simplify Steps to Month-End Close &gt;</h3>
+                <h3 class="heading" onclick="showInfo(2)"><img src="images/icon-timeline.svg" alt="Timeline icon">
+                    Eliminate Approval Bottlenecks &gt;</h3>
+                <h3 class="heading" onclick="showInfo(3)"><img src="images/icon-document_with_checkmark_and_dollar.svg"
+                        alt="Checkmark and dollar icon"> Reduce AP Processing Costs &gt;</h3>
+                <h3 class="heading" onclick="showInfo(4)"><img src="images/icon-wallet.svg" alt="Wallet icon"> Increase
+                    Spend Management Control &gt;</h3>
             </div>
-        
+
             <!-- Second Div to Show Info -->
             <div class="info" id="info-box">
                 <h4 id="info-title">Click on a heading to see more information.</h4>
                 <ul id="info-list">
-                  <li>List item 1</li>
-                  <li>List item 2</li>
-                  <li>List item 3</li>
-                  <li>List item 4</li>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <li>List item 4</li>
                 </ul>
-              </div>
-          </div>
-          <div class="get-demo-div">
+            </div>
+        </div>
+        <div class="get-demo-div">
             <a href="demo.html" class="demo">Get a Demo</a>
-          </div>
+        </div>
     </section>
     <section class="eighth-section">
         <div class="eighth-section-heading">
@@ -253,11 +277,11 @@
             <p>Join 2,000+ accounting and procurement teams who rely on PairSoft.</p>
         </div>
         <div class="eighth-section-content">
-           <img src="images/logo-kayak-carousel.webp" alt="Kayak logo">
-           <img src="images/logo-craftmark_bakery-carousel.webp" alt="Craftmark bakery logo">
-           <img src="images/logo-united_way_carousel.webp" alt="United way logo">
-           <img src="images/logo-cleveland_cavaliers-carousel.webp" alt="Cleveland cavaliers logo">
-           <img src="images/logo-washington_and_lee_university_carousel.webp" alt="Washinhton lee university logo"> 
+            <img src="images/logo-kayak-carousel.webp" alt="Kayak logo">
+            <img src="images/logo-craftmark_bakery-carousel.webp" alt="Craftmark bakery logo">
+            <img src="images/logo-united_way_carousel.webp" alt="United way logo">
+            <img src="images/logo-cleveland_cavaliers-carousel.webp" alt="Cleveland cavaliers logo">
+            <img src="images/logo-washington_and_lee_university_carousel.webp" alt="Washinhton lee university logo">
         </div>
         <div class="btn-div">
             <a href="#" class="demo customer-btn">More Customer Success Stories</a>
@@ -265,7 +289,7 @@
     </section>
     <section class="nineth-section">
         <div class="nineth-section-heading">
-            <h2>Simple solutions.<br/>Powerful results.<br/>Seamlessly integrated.</h2>
+            <h2>Simple solutions.<br />Powerful results.<br />Seamlessly integrated.</h2>
             <p>See PairSoft inside your ERP.</p>
             <a href="demo.html" class="demo demo-link">Get a Demo</a>
         </div>
@@ -282,7 +306,7 @@
             <a href="demo.html" class="demo demo-btn">Get a Demo</a>
         </div>
     </section>
-    <hr/>
+    <hr />
     <section class="eleventh-section">
         <div class="product">
             <h3>PRODUCT</h3>
@@ -350,10 +374,14 @@
                 <li><a href="">844-819-1208</a></li>
                 <li><span>-</span></li>
                 <li class="icons">
-                    <a href="https://www.facebook.com/pairsoftautomation"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/pairsoftautomation"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
                     <a href="https://x.com/pairsoft_tech?mx=2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="https://www.youtube.com/channel/UCqfC46nfmc2bNw-tjVZNH_A"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/company/pairsoft/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>   
+                    <a href="https://www.youtube.com/channel/UCqfC46nfmc2bNw-tjVZNH_A"><i class="fa fa-youtube-play"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/pairsoft/"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a>
+                </li>
             </ul>
         </div>
     </section>
@@ -368,7 +396,8 @@
             <span><a href="#">Cookie Policy</a></span>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
