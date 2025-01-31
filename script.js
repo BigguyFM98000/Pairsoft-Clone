@@ -1,3 +1,31 @@
+// Get elements
+const watchVideoBtn = document.getElementById('watch-video-btn');
+const modal = document.getElementById('video-modal');
+const closeBtn = document.getElementById('close-btn');
+const iframe = document.getElementById('video-iframe');
+
+// Video URL (You can replace this with any YouTube URL)
+const videoURL = "https://www.youtube.com/watch?v=wQCLlCbNkGQ&t=13s"; // Example: Rick Astley - Never Gonna Give You Up
+
+// When the user clicks the "Watch Video" button, open the modal and show the iframe
+watchVideoBtn.addEventListener('click', () => {
+    modal.style.display = "block";
+    iframe.src = videoURL; // Set the iframe source to the video URL
+});
+
+// When the user clicks the close button, close the modal and stop the video
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+    iframe.src = ""; // Clear the iframe source to stop the video
+});
+
+// When the user clicks anywhere outside the modal, close it
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        iframe.src = ""; // Clear the iframe source to stop the video
+    }
+});
 
 if(localStorage.getItem('auth_token')){
   // Get the raw JWT token from localStorage
@@ -13,7 +41,7 @@ if(localStorage.getItem('auth_token')){
 // Check if the user is logged in by checking the token in localStorage
 if (!localStorage.getItem('auth_token')) {
   // If no token, redirect to the login page
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
 
 // Logout button functionality
@@ -26,7 +54,7 @@ document.getElementById('logout-btn').addEventListener('click', () => {
   alert('You have logged out.');
 
   // Redirect the user to the login page after logout
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 });
 
 
