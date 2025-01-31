@@ -21,6 +21,7 @@
     <p>Don't have an account? <a href="register.html">Register</a></p>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
   <script>
     document.getElementById('login-form').addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -28,7 +29,7 @@
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
 
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch('http://localhost:5000/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -38,6 +39,14 @@
       if (res.ok) {
         alert('Login successful!');
         console.log('Token:', data.token);
+        // Decode the JWT token
+        const decodedToken = jwt_decode(data.token);
+
+        // Store the decoded token in localStorage
+        localStorage.setItem('auth_token', data.token);
+        localStorage.setItem('user_data', JSON.stringify(decodedToken));
+        // Redirect to the home page after successful login
+        window.location.href = 'index.html';
       } else {
         alert(data.message);
       }
